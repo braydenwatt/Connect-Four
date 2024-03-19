@@ -1,4 +1,4 @@
-# Connect-Four
+# Connect-N
 # Contributing to This Project
 ### the following is AI generated lol... (should be correct though)
 

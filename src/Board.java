@@ -15,20 +15,22 @@ public class Board {
         }
     }
     public void printBoard() {
+        System.out.print(" ");
         for(int i = 1; i <= columns; i ++){
             System.out.print(i + " ");
         }
         System.out.println();
-        for(int i = 1; i < columns*2; i ++){
+        for(int i = 1; i < columns*2+2; i ++){
             System.out.print("-");
         }
         System.out.println();
         for (int i = 0; i < board.length; i++){
+            System.out.print("|");
             for(int j = 0; j < board[0].length; j++){
                 if(board[i][j].getState() == 'N'){
-                    System.out.print("\u0000 ");
+                    System.out.print("-|");
                 } else {
-                    System.out.print(board[i][j].getState() + " ");
+                    System.out.print(board[i][j].getState() + "|");
                 }
             }
             System.out.println();
